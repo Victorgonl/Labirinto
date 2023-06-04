@@ -1,0 +1,12 @@
+pandoc --pdf-engine=wkhtmltopdf -o README.pdf \
+    -t html5 \
+    -f markdown README.md \
+    -V margin-top=2.0cm -V margin-left=0cm -V margin-right=0cm -V margin-bottom=2.0cm \
+    -V zoom=0.0 \
+    -V mainfont:"TeX Gyre Schola" \
+    -V image-dpi=300 \
+    -V papersize=A4 \
+    -V fontsize=12.5pt \
+    -V title="Labirinto" \
+    -V author="Victor Gonçalves Lima" \
+    -V header-includes="<style>.title{display:none;}</style><style>.author{display:none;}</style>"
